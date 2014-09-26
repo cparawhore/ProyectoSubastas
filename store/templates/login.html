@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+	{% block body %}
+	<div id="page-title">
+		<div id="page-title-inner">
+			<div class="container">
+				<h2><i class="ico-justify  ico-white"></i>Ingresar</h2>
+			</div>
+		</div>	
+
+	</div>
+	
+	
+	<div id="wrapper">		
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<div class="title"><h3>Datos de cuenta</h3></div>
+					<div id="contact-form">
+						<form method="post" action="">
+								{% csrf_token %}
+								{{ formulario.as_p }}
+								<input type="submit" value="Ingresar" class="btn btn-success">
+						</form>
+					</div>					
+				</div>
+			</div>
+		</div>		
+  	</div>		
+
+    {% endblock %}

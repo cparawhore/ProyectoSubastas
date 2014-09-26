@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <!-- start: Meta -->
+  <meta charset="utf-8">
+  <title>Cloud Store</title> 
+  <meta name="description" content="Cloud Store"/>
+  <meta name="keywords" content="dota 2,web, html5, css3, javascript" />
+  <meta name="author" content="Christian Avalos"/>
+  <!-- end: Meta -->
+  
+  <!-- start: Mobile Specific -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- end: Mobile Specific -->
+  
+  <!-- start: Facebook Open Graph -->
+  <meta property="og:title" content=""/>
+  <meta property="og:description" content=""/>
+  <meta property="og:type" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content=""/>
+  <!-- end: Facebook Open Graph -->
+
+    <!-- start: CSS -->
+    <!--link href="css/bootstrap.css" rel="stylesheet"-->
+    <link href="{{STATIC_URL}}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="{{STATIC_URL}}css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/component.css" />
+  <script src="{{STATIC_URL}}js/snap.svg-min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+  <!-- end: CSS -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {%block extrahead %} {%endblock %}
+</head>
+
+<header>
+    <div class="container">
+      
+      <!--start: Row -->
+      <div class="row">
+          
+        <!--start: Logo -->
+        <div class="logo span3">
+            
+          <a class="brand" href="../"><img src="{{STATIC_URL}}img/logo.png" alt="Logo"></a>
+            
+        </div>
+        <div class="span9">
+                  <a class="pull-right a-head" href="../signup"><button class="btn btn-succes btn-large">Registrarse</button></a>
+                  <a class="pull-right a-head" href="../login"><button class="btn btn-succes btn-large">Ingresar</button></a>
+                  </div>
+        </div>
+        </div>
+  </header>
+  <body>
+  {%block body %} {% endblock %}
+
+  <script src="js/jquery-1.8.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/flexslider.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/jquery.cslider.js"></script>
+<script src="js/slider.js"></script>
+<script def src="js/custom.js"></script>
+ 
+  </body>
+<!-- start: Footer -->
+  <div id="footer">
+
+    <!-- start: Container -->
+    <div class="container">
+
+      <!-- start: Row -->
+      <div class="row">
+
+        <!-- start: About -->
+        <div class="span3">
+          <div class="title"><h3>Contáctanos</h3></div>
+          <p>
+            <b>Cloud Store</b>
+          </p>
+          <p>
+            Barranca - Huacho
+          </p>
+          <p>
+            Email: xepher95@gmail.com
+          </p>
+          <p>
+            Web: cloudstore.com
+          </p>
+        </div>
+
+        <div class="span5">
+          <div class="title"><h3>Siguenos!</h3></div>
+          <ul class="social-bookmarks">
+            
+            <li class="deviantart"><a href="#">deviantart</a></li>
+            <li class="facebook"><a href="https://www.facebook.com/CloudStoreDota">facebook</a></li>
+            <li class="forrst"><a href="#">forrst</a></li>
+            <li class="github"><a href="#">github</a></li>
+            <li class="tumblr"><a href="#">tumblr</a></li>
+            <li class="twitter"><a href="#">twitter</a></li>
+            
+          </ul>
+          <div class="title"><h3><a href="comments.php">Sugerencias y comentarios!</a></h3></div>
+          <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FCloudStoreDota&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=179063905628144" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+        </div>
+        
+          <div class="span4">
+          <div class="title"><h3>Faltan sets o partes?</h3></div>
+          <form method="post" action="Controlador/hero_suge.php">
+            No encuentras algún item/objeto que quieras adquirir? Mandanos una sugerencia :</br>
+            <b>Mandar spam se castiga con Ban!</b>
+            <div class="input">
+                    <input tabindex="3" size="18" name="z" type="text" value="" autocomplete="off">
+                  </div>
+          <div class="actions">
+            <button id="steam_ver" tabindex="3" type="submit" class="btn btn-succes btn-large">Enviar</button>
+          </div>
+        </form>
+        </div>
+        
+
+      </div>
+      <!-- end: Row --> 
+
+    </div>
+    <!-- end: Container  -->
+
+  </div>
+  <!-- end: Footer -->
+  <!-- start: Copyright -->
+  <div id="copyright">
+  
+    <!-- start: Container -->
+    <div class="container">
+    
+      <p>
+        &copy; 2014, DevIt! - Christian Avalos. </br>
+        <a href="http://steampowered.com">Powered by Steam</a></br>
+        &copy; 2013, creativeLabs. <a href="http://bootstrapmaster.com" alt="Bootstrap Themes">Bootstrap Themes</a> designed by BootstrapMaster in Poland <img src="{{STATIC_URL}}img/poland2.png" alt="Poland" style="margin-top:-4px">
+      </p>
+  
+    </div>
+    <!-- end: Container  -->
+    
+  </div>  
+  <!-- end: Copyright -->
+  </html>

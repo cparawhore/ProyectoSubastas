@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Iniciar Sesion
+	</title>
+</head>
+<body>
+<h2> Datos de usuario</h2>
+	<form action="" method="POST">
+		{% csrf_token %}
+		{{ formulario.as_p }}
+		<input type="submit" value="Ingresar" class="btn btn-success">
+	</form>
+
+</body>
+</html>
