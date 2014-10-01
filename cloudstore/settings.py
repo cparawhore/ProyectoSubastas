@@ -67,6 +67,9 @@ DATABASES = {
 	'PASSWORD': 'paramore761',
 	'HOST': 'localhost',
 	'PORT': '3306',
+    'OPTIONS': {'ssl': {'ca':'../store/cleardb-ca.cer', 
+            'cert':'../store/client-cert.cer', 
+            'key':'../store/client-key-nopass.cer'},},
     }
 }
 
